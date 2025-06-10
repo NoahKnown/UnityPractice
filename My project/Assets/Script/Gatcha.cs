@@ -53,9 +53,9 @@ public class Gatcha : MonoBehaviour
     }
     public void Gacha()
     {
-        int gatcharnum5 = Random.Range(0, characterList_5S.Count);  // 8 , 0 ~ 7)
-        int gatcharnum6 = Random.Range(0, characterList_5SS.Count);  // 6 , 0 ~ 5)
-        int gatcharnum4 = Random.Range(0, characterList_4S.Count);  // 8 , 0 ~ 7)
+        int gatcharnum5S = Random.Range(0, characterList_5S.Count);  // 8 , 0 ~ 7)
+        int gatcharnum5SS = Random.Range(0, characterList_5SS.Count);  // 6 , 0 ~ 5)
+        int gatcharnum4S = Random.Range(0, characterList_4S.Count);  // 8 , 0 ~ 7)
         int gatcharnum = Random.Range(1, 101);
         int gatchar5snum = Random.Range(1, 11);
         for (int i = 0; i < 10; i++)
@@ -67,22 +67,22 @@ public class Gatcha : MonoBehaviour
 
                 if (count5 == true)
                 {
-                    gatcharnum6 = Random.Range(0, characterList_5SS.Count);
-                    Debug.Log(characterList_5SS[gatcharnum6]);
+                    gatcharnum5SS = Random.Range(0, characterList_5SS.Count);
+                    Debug.Log(characterList_5SS[gatcharnum5SS]);
                     count = 0;
                     count5 = false;
                 }
                 else if (gatchar5snum <= 5)
                 {
-                    gatcharnum5 = Random.Range(0, characterList_5S.Count);
-                    Debug.Log(characterList_5S[gatcharnum5]);
+                    gatcharnum5S = Random.Range(0, characterList_5S.Count);
+                    Debug.Log(characterList_5S[gatcharnum5S]);
                     count = 0;
                     count5 = true;
                 }
                 else
                 {
-                    gatcharnum6 = Random.Range(0, characterList_5SS.Count);
-                    Debug.Log(characterList_5SS[gatcharnum6]);
+                    gatcharnum5SS = Random.Range(0, characterList_5SS.Count);
+                    Debug.Log(characterList_5SS[gatcharnum5SS]);
                     count = 0;
                     count5 = false;
                 }
@@ -94,30 +94,30 @@ public class Gatcha : MonoBehaviour
 
                 if (count5 == true)
                 {
-                    gatcharnum6 = Random.Range(0, characterList_5SS.Count);
-                    Debug.Log(characterList_5SS[gatcharnum6]);
+                    gatcharnum5SS = Random.Range(0, characterList_5SS.Count);
+                    Debug.Log(characterList_5SS[gatcharnum5SS]);
                     count = 0;
                     count5 = false;
                 }
                 else if (gatchar5snum <= 5)
                 {
-                    gatcharnum5 = Random.Range(0, characterList_5S.Count);
-                    Debug.Log(characterList_5S[gatcharnum5]);
+                    gatcharnum5S = Random.Range(0, characterList_5S.Count);
+                    Debug.Log(characterList_5S[gatcharnum5S]);
                     count = 0;
                     count5 = true;
                 }
                 else
                 {
-                    gatcharnum6 = Random.Range(0, characterList_5SS.Count);
-                    Debug.Log(characterList_5SS[gatcharnum6]);
+                    gatcharnum5SS = Random.Range(0, characterList_5SS.Count);
+                    Debug.Log(characterList_5SS[gatcharnum5SS]);
                     count = 0;
                     count5 = false;
                 }
             }
             else
             {
-                gatcharnum4 = Random.Range(0, characterList_4S.Count);
-                Debug.Log(characterList_4S[gatcharnum4]);
+                gatcharnum4S = Random.Range(0, characterList_4S.Count);
+                Debug.Log(characterList_4S[gatcharnum4S]);
                 count++;
             }
         }
